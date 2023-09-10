@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>오류를 찾으세요</title>
+    <style>
+        h3 {
+            text-align: center;
+            color: darkred; /* Corrected the color value */
+        }
+
+        span {
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Elvis Presley</h3>
+    <p> <!-- Added a <p> tag to enclose the text -->
+        He was an American singer and actor. In
