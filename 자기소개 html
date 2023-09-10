@@ -1,32 +1,59 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <style>
+
   #ezimin-jjal {
+
     display: none;
+
     position: absolute;
+
   }
+
 </style>
+
 </head>
+
 <body>
+
   <span id="ezimin-text">이지민</span>
 
   <div id="ezimin-jjal">
-    <img src="귀여운-짤-이미지.gi" alt="귀여운 짤 이미지">
+
+    <img src="귀여운-짤-이미지.gif" alt="귀여운 짤 이미지">
+
   </div>
 
-<script>
-  const eziminText = document.getElementById("ezimin-text");
+  <!-- 자기소개 섹션 -->
 
+  <section>
+
+    <h1>안녕하세요!</h1>
+
+    <p>저는 정보통신공학과 1학년을 재학중인 이지민입니다. 저는 아직 기초 공부를 계속해서 배워나가고 있습니다.</p>
+
+    <p>저는 주로 프로그래밍, 네트워크, 데이터 분석 등 정보통신공학과 관련된 분야에 흥미를 가지고 있습니다. 미래에는 이 분야에서 더 깊은 지식을 습득하고 실무 경험을 쌓아보고자 합니다.</p>
+
+    <p>이메일: dlwlals3456@naver.com</p>
+
+    <p>감사합니다!</p>
+
+  </section>
+ 
+<script>
+
+  const eziminText = document.getElementById("ezimin-text");
+ 
   const eziminJjal = document.getElementById("ezimin-jjal");
 
   eziminText.addEventListener("mouseover", function() {
-    eziminJjal.style.display = "block";
+
   });
 
   eziminText.addEventListener("mouseout", function() {
+
     eziminJjal.style.display = "none";
-  });
-</script>
-</body>
-</html>
