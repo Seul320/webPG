@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #ezimin-jjal {
+    display: none;
+    position: absolute;
+  }
+</style>
+</head>
+<body>
+  <span id="ezimin-text">이지민</span>
+
+  <div id="ezimin-jjal">
+    <img src="귀여운-짤-이미지.gi" alt="귀여운 짤 이미지">
+  </div>
+
+<script>
+  const eziminText = document.getElementById("ezimin-text");
+
+  const eziminJjal = document.getElementById("ezimin-jjal");
+
+  eziminText.addEventListener("mouseover", function() {
+    eziminJjal.style.display = "block";
+  });
+
+  eziminText.addEventListener("mouseout", function() {
+    eziminJjal.style.display = "none";
+  });
+</script>
+</body>
+</html>
