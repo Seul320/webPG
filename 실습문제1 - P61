@@ -1,0 +1,29 @@
+1. <body> 추가
+2. span의CSS 스타일 수정. span 요소별 color=blue;. color: blue;_
+3. 닫는 태그 추가. </p> , </body>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>오류를 찾으세요</title>
+    <style>
+        h3 {
+            text-align: center;
+            color: darkred;
+        }
+
+        span {
+            color: blue; /* Changed '=' to ':' for CSS property assignment */
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body> <!-- Added opening <body> tag -->
+    <h3>Elvis Presley</h3>
+    <p> <!-- Added <p> tag to enclose the text -->
+        He was an American singer and actor. In November 1956,
+        he is often referred to as "<span>the King of Rock and Roll</span>"
+    </p> <!-- Closed <p> tag -->
+</body>
+</html>
+
