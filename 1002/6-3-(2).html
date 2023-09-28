@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>document.write()로 표만들기</title>
+</head>
+<body>
+    <h2>document.write()로 표만들기</h2>
+    <hr>
+    <table border="1">
+        <tbody>
+            <tr>
+                <script>
+                    document.write("<td><b>n</b></td>");
+                    for (var n = 0; n <= 9; n++) {
+                        document.write("<td>" + n + "</td>");
+                    }
+                </script>
+            </tr>
+            <tr>
+                <script>
+                    document.write("<td><b>n²</b></td>");
+                    for (var n = 0; n <= 9; n++) {
+                        var square = n * n;
+                        document.write("<td>" + square + "</td>");
+                    }
+                </script>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
