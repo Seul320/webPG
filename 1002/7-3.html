@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7-3</title>
+</head>
+<body>
+<script>
+function changeBackgroundColor() {
+    const now = new Date();
+    const hours = now.getHours();
+
+    // 오전 (시간이 0부터 11까지)
+    if (hours >= 0 && hours < 12) {
+        document.body.style.backgroundColor = "lightskyblue";
+    }
+    // 오후 (시간이 12부터 23까지)
+    else {
+        document.body.style.backgroundColor = "orange";
+    }
+}
+
+changeBackgroundColor(); // 페이지가 로드될 때 배경색 설정
+
+</script>
+</body>
+</html>

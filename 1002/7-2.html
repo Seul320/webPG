@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7-2</title>
+</head>
+<body>
+<h3>정수 5개 입력받아 역순으로 출력</h3>
+<hr>
+<script>
+let integers = []; // 정수를 저장할 배열
+for (let i = 0; i < 5; i++) {
+    let userInput = prompt("정수를 입력하세요:");
+    let parsedInt = parseInt(userInput);
+
+    // 사용자 입력이 유효한 정수인지 확인
+    if (!isNaN(parsedInt)) {
+        integers.push(parsedInt);
+    } else {
+        alert("유효한 정수를 입력해주세요.");
+        i--; // 유효한 입력이 아닌 경우 다시 입력 받기 위해 i를 줄입니다.
+    }
+}
+
+document.write("입력된 정수 배열: " + integers.join(", "));
+document.write("<br>");
+document.write("역순으로 재정렬된 배열: " + integers.reverse().join(", "));
+document.write("<hr>");
+</script>
+</body>
+</html>
