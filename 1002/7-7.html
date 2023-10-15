@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>색 이름 출력</title>
+    <style>
+        #colorBoxes {
+            display: flex;
+        }
+
+        div {
+            width: 120px;
+            height: 80px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>색 이름 출력</h1>
+    <hr>
+
+    <div id="colorBoxes"></div>
+
+    <script>
+        let colorNames = ["maroon", "red", "orange", "yellow", "olive", "purple",
+            "fuchsia", "white", "lime", "green", "navy", "blue", "aqua", "teal", "black", "silver", "gray"];
+
+        let colorBoxes = document.getElementById("colorBoxes");
+
+        for (let i = 0; i < colorNames.length; i++) {
+            let div = document.createElement("div");
+            div.style.backgroundColor = colorNames[i];
+            div.innerHTML = colorNames[i];
+            colorBoxes.appendChild(div);
+        }
+    </script>
+</body>
+</html>

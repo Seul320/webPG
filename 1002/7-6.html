@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>문자열 분할</title>
+</head>
+<body>
+    <h1>문자열 분할</h1>
+    <hr>
+    <button onclick="splitString()">문자열 입력</button>
+
+    <div id="result"></div>
+
+    <script>
+        function splitString() {
+            // 사용자로부터 문자열 입력 받기
+            const userInput = prompt("문자열을 입력하세요:");
+            
+            if (userInput !== null) {
+                // 문자열을 "&" 문자로 분할
+                const parts = userInput.split("&");
+
+                // 분할된 결과 출력
+                const resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = "입력된 문자열: " + userInput + "<br>";
+                resultDiv.innerHTML += "분할된 결과: " + parts.join(", ");
+            }
+        }
+    </script>
+</body>
+</html>

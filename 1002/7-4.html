@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7-4</title>
+</head>
+<body>
+<script>
+function changeBackgroundColor() {
+    const now = new Date();
+    const dayOfWeek = now.getDay(); // 현재 요일을 가져옴 (0: 일요일, 1: 월요일, ..., 6: 토요일)
+
+    if (dayOfWeek >= 1 && dayOfWeek <= 5) {
+        // 월요일부터 금요일까지 (1부터 5까지) gold 배경색
+        document.body.style.backgroundColor = "gold";
+    } else if (dayOfWeek === 0) {
+        // 일요일 (0) pink 배경색
+        document.body.style.backgroundColor = "pink";
+    }
+}
+
+changeBackgroundColor(); // 페이지가 로드될 때 배경색 설정
+
+</script>
+</body>
+</html>

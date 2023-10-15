@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Book 객체 만들기</title>
+</head>
+<body>
+    <h1>Book 객체 만들기</h1>
+    <hr>
+    <p>book: HTML5, 황기태, 20000</p>
+
+    <!-- JavaScript로 book 객체 생성 -->
+    <script>
+        // (1) new Object()를 이용하여 book 객체를 작성하고 출력
+        const book1 = new Object();
+        book1.title = "HTML5";
+        book1.author = "황기태";
+        book1.price = 20000;
+
+        console.log("Using new Object():", book1);
+
+        // (2) 리터럴 표기법으로 book 객체를 작성하고 출력
+        const book2 = {
+            title: "HTML5",
+            author: "황기태",
+            price: 20000
+        };
+
+        console.log("Using Object Literal:", book2);
+
+        // (3) 프로토타입 Book을 작성하고 book 객체를 출력
+        function Book(title, author, price) {
+            this.title = title;
+            this.author = author;
+            this.price = price;
+        }
+
+        const book3 = new Book("HTML5", "황기태", 20000);
+
+        console.log("Using Constructor Function:", book3);
+    </script>
+</body>
+</html>
