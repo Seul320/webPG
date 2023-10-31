@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2023758030 이지민</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
         .Report-button-container {
-            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
         }
 
         .Report-button {
-            width: 130px;
-            height: 40px;
-            line-height: 42px;
-            position: relative;
+            width: 150px;
+            height: 50px;
+            margin: 10px;
             border: none;
             background: transparent;
             cursor: pointer;
-            outline: none;
             overflow: hidden;
+            position: relative;
+            border-radius: 5px;
+            transition: transform 0.3s;
         }
 
         .Report-button a {
@@ -32,72 +46,39 @@
         }
 
         .Report-button span {
-            background: rgb(0, 172, 238);
-            background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
             display: block;
             position: absolute;
-            width: 130px;
-            height: 40px;
-            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-                        7px 7px 20px 0px rgba(0, 0, 0, .1),
-                        4px 4px 5px 0px rgba(0, 0, 0, .1);
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+            box-shadow: 2px 2px 2px rgba(255, 255, 255, .5), 7px 7px 20px rgba(0, 0, 0, .1), 4px 4px 5px rgba(0, 0, 0, .1);
             border-radius: 5px;
-            margin: 0;
             text-align: center;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            -webkit-transition: all .3s;
+            transform-origin: 50% 50% -20px;
             transition: all .3s;
         }
 
-        .Report-button span:nth-child(1) {
-            box-shadow: -7px -7px 20px 0px #fff9,
-                        -4px -4px 5px 0px #fff9,
-                        7px 7px 20px 0px #0002,
-                        4px 4px 5px 0px #0001;
-            -webkit-transform: rotateX(90deg);
-            -moz-transform: rotateX(90deg);
-            transform: rotateX(90deg);
-            -webkit-transform-origin: 50% 50% -20px;
-            -moz-transform-origin: 50% 50% -20px;
-            transform-origin: 50% 50% -20px;
+        .Report-button:hover {
+            transform: rotateX(180deg);
         }
 
-        .Report-button span:nth-child(2) {
-            -webkit-transform: rotateX(0deg);
-            -moz-transform: rotateX(0deg);
-            transform: rotateX(0deg);
-            -webkit-transform-origin: 50% 50% -20px;
-            -moz-transform-origin: 50% 50% -20px;
-            transform-origin: 50% 50% -20px;
-        }
-
-        .Report-button:hover span:nth-child(1) {
-            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-                        7px 7px 20px 0px rgba(0, 0, 0, .1),
-                        4px 4px 5px 0px rgba(0, 0, 0, .1);
-            -webkit-transform: rotateX(0deg);
-            -moz-transform: rotateX(0deg);
-            transform: rotateX(0deg);
-        }
-
-        .Report-button:hover span:nth-child(2) {
-            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-                        7px 7px 20px 0px rgba(0, 0, 0, .1),
-                        4px 4px 5px 0px rgba(0, 0, 0, .1);
-            color: transparent;
-            -webkit-transform: rotateX(-90deg);
-            -moz-transform: rotateX(-90deg);
-            transform: rotateX(-90deg);
+        .Report-button:hover span {
+            background: linear-gradient(0deg, rgba(2, 126, 251, 1) 0%, rgba(0, 172, 238, 1) 100%);
         }
     </style>
 </head>
+
 <body>
+    <h1>6 장</h1>
+    <hr>
     <div class="Report-button-container">
-        <div class="Report-button">
-            <a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-1-(1).html"><span>Click!</span><span>Read More</span></a>
-        </div>
+        <!-- 여기에 버튼들을 추가하세요 -->
+    </div>
+
+    <h2>7 장</h2>
+    <hr>
+    <div class="Report-button-container">
+        <!-- 여기에 7 장 버튼들을 추가하세요 -->
     </div>
 </body>
 </html>
