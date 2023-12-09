@@ -1,3 +1,13 @@
+>>1106
+### 문제 1: 홀수일 경우 다음 짝수 또는 자신을 출력하는 함수
+- [닷홈 링크](http://dlwlals3456.dothome.co.kr/problem1.php)
+
+### 문제 2: while 루프를 사용한 팩토리얼 값 계산 함수
+- [닷홈 링크](http://dlwlals3456.dothome.co.kr/problem2.php)
+
+### 문제 3: 삼항 연산자를 사용한 홀수 또는 짝수 확인 프로그램
+- [닷홈 링크](http://dlwlals3456.dothome.co.kr/problem3.php)
+
 - 문제 1: 동적 웹페이지와 정적 웹페이지의 차이
 동적 웹페이지와 정적 웹페이지의 주요 차이점은 다음과 같습니다.
 
