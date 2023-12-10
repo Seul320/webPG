@@ -1,20 +1,18 @@
->>1106
-### 문제 1: 홀수일 경우 다음 짝수 또는 자신을 출력하는 함수
-![Alt text](image.png)
+# 1106
 
+## 문제 1: 홀수일 경우 다음 짝수 또는 자신을 출력하는 함수
+![Alt text](image.png)
 - [닷홈 링크](http://dlwlals3456.dothome.co.kr/problem1.php)
 
-### 문제 2: while 루프를 사용한 팩토리얼 값 계산 함수
+## 문제 2: while 루프를 사용한 팩토리얼 값 계산 함수
 ![Alt text](image-1.png)
-
 - [닷홈 링크](http://dlwlals3456.dothome.co.kr/problem2.php)
 
-### 문제 3: 삼항 연산자를 사용한 홀수 또는 짝수 확인 프로그램
+## 문제 3: 삼항 연산자를 사용한 홀수 또는 짝수 확인 프로그램
 ![Alt text](image-2.png)
-
 - [닷홈 링크](http://dlwlals3456.dothome.co.kr/problem3.php)
 
-- 문제 1: 동적 웹페이지와 정적 웹페이지의 차이
+## 문제 4: 동적 웹페이지와 정적 웹페이지의 차이
 동적 웹페이지와 정적 웹페이지의 주요 차이점은 다음과 같습니다.
 
 정적 웹페이지:
@@ -29,8 +27,8 @@
 서버에서 스크립트 언어(예: PHP, Python, Ruby)를 사용하여 콘텐츠를 생성하고 전달합니다.
 데이터베이스와 연동하여 실시간으로 정보를 갱신할 수 있습니다.
 주로 웹 어플리케이션에서 많이 사용됩니다.
-
-- 문제 2: PHP에 설치된 모듈(20개)은 어떤 것이 있는지 조사
+  
+## 문제 5: PHP에 설치된 모듈(20개)은 어떤 것이 있는지 조사
 일반적으로 사용되는 PHP 모듈은 MySQL, SQLite, GD (이미지 처리), cURL 등이 있습니다.
 
 MySQL(i): MySQL 데이터베이스와 상호 작용을 위한 모듈.
@@ -53,8 +51,8 @@ SimpleXML: XML 데이터를 쉽게 다루기 위한 모듈.
 Opcache: PHP 코드를 캐시하여 성능을 향상시키는 모듈.
 Filter: 데이터 필터링 및 유효성 검사를 위한 모듈.
 LDAP: Lightweight Directory Access Protocol에 접근하기 위한 모듈.
-
-- 문제 3: PHP에서 사용되는 스크립트 엔진
+  
+## 문제 6: PHP에서 사용되는 스크립트 엔진
 Zend 엔진:
 
 개요: Zend 엔진은 PHP의 공식적인 실행 엔진 중 하나로, PHP 스크립트를 실행하는 데 사용됩니다.
@@ -73,15 +71,14 @@ PHP 7 이상 버전부터는 Zend 엔진이 크게 개선되었습니다. PHP 7�
 다른 엔진과의 호환성:
 
 PHP는 Zend 엔진을 사용하는 것이 일반적이지만, 다른 엔진도 선택할 수 있습니다. 예를 들어, HHVM(HipHop Virtual Machine)은 Facebook에서 개발한 대체 엔진으로 PHP 코드를 더 빠르게 실행할 수 있도록 설계되었습니다. 그러나 PHP 7 이후 버전부터는 Zend 엔진의 성능이 크게 향상되어서 대부분의 사용자들이 Zend 엔진을 사용하는 추세입니다.
-
-- 문제 4: http://www.abc.com/abc.php 페이지에 접속했을 때 서버의 동작
-
+  
+## 문제 7: http://www.abc.com/abc.php 페이지에 접속했을 때 서버의 동작
 클라이언트가 http://www.abc.com/abc.php에 접속을 시도합니다.
 웹 서버는 해당 요청을 받아 PHP 엔진에게 전달합니다.
 PHP 엔진은 abc.php 파일을 실행하고 그 결과를 웹 서버에 전달합니다.
 웹 서버는 최종적으로 클라이언트에게 동적으로 생성된 웹페이지를 응답으로 전송합니다.
 
-- 문제 5: call by value와 call by reference의 차이
+## 문제 8: call by value와 call by reference의 차이
 Call by Value:
 
 함수에 값을 전달하는 방식.
