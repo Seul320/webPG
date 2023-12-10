@@ -1,204 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>GitHub Hosting</title>
+
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h3 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        details {
+            margin-bottom: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: border-color 0.3s;
+        }
+
+        details:hover {
+            border-color: #007bff;
+        }
+
+        summary {
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        summary:hover {
+            background-color: #0056b3;
+        }
+
+        h4 {
+            display: inline;
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+
+        .badge {
+            margin-right: 5px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        h5 {
+            margin-top: 10px;
+        }
+
+        h6 {
+            margin-top: 5px;
+        }
+
+        .btn-cube {
+            position: relative;
+            transition: transform 0.5s;
+        }
+
+        .btn-cube:hover {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+
+        .btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-list .btn {
+    flex: 1;
+    width: 100%; /* 각 버튼이 플렉스 컨테이너 내에서 100%의 너비를 차지하도록 설정 */
+}
+
+/* 버튼 사이의 간격을 더 잘 보이도록 하기 위해 약간의 마진을 추가합니다. */
+.btn-list .btn {
+    margin-bottom: 10px;
+}
+        /* 모든 Ch.4 연습문제 버튼을 btn-secondary로 변경 */
+        .ch4-exercise-btn {
+            background-color: #6c757d;
+            color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .ch4-exercise-btn:hover {
+            background-color: #495057;
+        }
+    </style>
 </head>
+
 <body>
     <h3><b>2023 Web Programming</b></h3>
     <hr>
     <ul>
         <li>
             <details>
-                <summary><h4><span class="badge bg-primary">1주차 과제</span></h4></summary>
-                <h5><span class="badge bg-success">Open Challenge-01</span></h5>
-                <ul>
-                    <li><h6><a href="./1week/html/자기소개HTML페이지만들기.html">Open Challenge</a></h6></li>
+                <summary><h4 class="badge bg-primary">1주차 레포트</h4></summary>
+                
+                <h5 class="badge bg-success">자기소개서</h5>
+                <ul class="btn-list">
+                    <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/Open%20Challenge%2006.html"
+                                class="btn btn-primary btn-cube">자기소개서</a></h6></li>
                 </ul>
-                <br>
-                <h5><span class="badge bg-success">Ch1. 실습문제</span></h5>
-                <ul>
-                    <li><h6><a href="./1week/html/실습문제1.html">실습문제 1</a></h6></li>
-                    <li><h6><a href="./1week/html/실습문제2.html">실습문제 2</a></h6></li>
-                    <li><h6><a href="./1week/html/실습문제3.html">실습문제 3</a></h6></li>
-                    <li><h6><a href="./1week/html/실습문제4.html">실습문제 4</a></h6></li>
-                </ul>
-                <br>
-            </details>
-        </li>
-        <li>
-            <details>
-                <summary><h4><span class="badge bg-primary">2주차 과제</span></h4></summary>
-                <h5><span class="badge bg-success">Open Challenge-02</span></h5>
-                <ul>
-                    <li><h6><a href="./2week/html/openchallenge-2.html">Open Challenge</a></h6></li>
-                </ul>
-                <br>
-                <h5><span class="badge bg-success">Ch2. 실습문제</span></h5>
-                <ul>
-                    <li><h6><a href="./2week/html/실습문제1.html">실습문제 1</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제2-1.html">실습문제 2-1</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제2-2.html">실습문제 2-2</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제3.html">실습문제 3</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제4-1.html">실습문제 4-1</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제4-2.html">실습문제 4-2</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제5.html">실습문제 5</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제6.html">실습문제 6</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제7.html">실습문제 7</a></h6></li>
-                    <li><h6><a href="./2week/html/실습문제8.html">실습문제 8</a></h6></li>
+                <hr>
+                <h5 class="badge bg-success">Ch1. 연습문제</h5>
+                <ul class="btn-list">
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\0911\P58.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 6-1-(1)</a></h6></li>
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\0911\P61 - 1.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 6-1-(2)</a></h6></li>
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\0911\P61 - 2.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 6-2</a></h6></li>
                 </ul>
                 <br>
             </details>
         </li>
         <li>
             <details>
-                <summary><h4><span class="badge bg-primary">3주차 과제</span></h4></summary>
-                <h5><span class="badge bg-success">자기소개서</span></h5>
-                <ul>
-                    <li>
-                        <h6><a href="./3week/html/index.html">자기소개서</a></h6>
-                    </li>
-                    <br>
-                </ul>
-                <h5><span class="badge bg-success">Open Challenge-04</span></h5>
-                <ul>
-                    <li><h6><a href="./3week/html/Ch4-openchallenge.html">Open Challenge</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-설문조사.html">Survey</a></h6></li>
+                <summary><h4 class="badge bg-primary">2주차 레포트</h4></summary>
+                <h5 class="badge bg-success">Ch2. 연습문제</h5>
+                <ul class="btn-list">
+                    <li><h6><a href="webPG/0918/7.html"
+                                class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 1</a></h6></li>
+                    <li><h6><a href="webPG/0918/8.html"
+                                class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 2</a></h6></li>
                 </ul>
                 <br>
-                <h5><span class="badge bg-success">Ch4. 실습문제</span></h5>
-                <ul>
-                    <li><h6><a href="./3week/html/Ch4-실습문제1.html">실습문제 1</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-실습문제2.html">실습문제 2</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-실습문제3.html">실습문제 3</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-실습문제4.html">실습문제 4</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-실습문제5.html">실습문제 5</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-실습문제6.html">실습문제 6</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-실습문제7.html">실습문제 7</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-실습문제8.html">실습문제 8</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch4-실습문제9.html">실습문제 9</a></h6></li>
-                </ul>
-                <br>
-                <h5><span class="badge bg-success">Open Challenge-05</span></h5>
-                <ul>
-                    <li><h6><a href="./3week/html/Ch5-openchallenge.html">Open Challenge</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-설문조사.html">Survey</a></h6></li>
-                </ul>
-                <br>
-                <h5><span class="badge bg-success">Ch5. 실습문제</span></h5>
-                <ul>
-                    <li><h6><a href="./3week/html/Ch5-실습문제1-1.html">실습문제 1-1</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제1-2.html">실습문제 1-2</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제2.html">실습문제 2</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제3.html">실습문제 3</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제4-1.html">실습문제 4-1</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제4-2.html">실습문제 4-2</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제5.html">실습문제 5</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제6-1.html">실습문제 6-1</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제6-2.html">실습문제 6-2</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제7.html">실습문제 7</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제8.html">실습문제 8</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제9.html">실습문제 9</a></h6></li>
-                    <li><h6><a href="./3week/html/Ch5-실습문제10.html">실습문제 10</a></h6></li>
-                </ul>
             </details>
         </li>
         <li>
             <details>
-                <summary><h4><span class="badge bg-primary">4주차 과제</span></h4></summary>
-                <h5><span class="badge bg-success">Open Challenge-06</span></h5>
+                <summary><h4 class="badge bg-primary">3주차 레포트</h4></summary>
+                <h5 class="badge bg-success">Open Challenge 05,06</h5>
                 <ul>
-                    <li><h6><a href="./4week/html/Ch6-openchallenge.html">Open Challenge</a></h6></li>
+                    <li><h6><a href="webPG/0925/Open Challenge 05.html"
+                                class="btn btn-primary btn-cube">Open Challenge 1</a></h6></li>
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\0925\P202.html"
+                                class="btn btn-primary btn-cube">Open Challenge 2</a></h6></li>
                 </ul>
                 <br>
-                <h5><span class="badge bg-success">Ch6. 실습문제</span></h5>
-                <ul>
-                    <li><h6><a href="./4week/html/Ch6-실습과제1-1.html">실습문제 1-1</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch6-실습과제1-2.html">실습문제 1-2</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch6-실습과제2.html">실습문제 2</a></li>
-                    <li><h6><a href="./4week/html/Ch6-실습과제3-1.html">실습문제 3-1</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch6-실습과제3-2.html">실습문제 3-2</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch6-실습과제4.html">실습문제 4</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch6-실습과제5.html">실습문제 5</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch6-실습과제6-1.html">실습문제 6-1</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch6-실습과제6-2.html">실습문제 6-2</a></h6></li>
-                        <li><h6><a href="./4week/html/Ch6-실습과제7.html">실습문제 7</a></h6></li>
-                        <li><h6><a href="./4week/html/Ch6-실습과제8.html">실습문제 8</a></h6></li>
+                <h5 class="badge bg-success">Ch3. 연습문제</h5>
+                <ul class="btn-list">
+                    <li><h6><a href="./3week/html/연습문제1.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 1</a></h6></li>
+            <li><h6><a href="./3week/html/연습문제2.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 2</a></h6></li>
+            <li><h6><a href="./3week/html/연습문제3.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 3</a></h6></li>
+            <li><h6><a href="./3week/html/연습문제4.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 4</a></h6></li>
+            <li><h6><a href="./3week/html/연습문제5.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 5</a></h6></li>
+            <li><h6><a href="./3week/html/연습문제6.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 6</a></h6></li>
+            <li><h6><a href="./3week/html/연습문제7.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 7</a></h6></li>
                 </ul>
                 <br>
-                <h5><span class="badge bg-success">Open Challenge-07</span></h5>
-                <ul>
-                    <li><h6><a href="./4week/html/Ch7-openchallenge.html">Open Challenge</a></h6></li>
-                </ul>
-                <br>
-                <h5><span class="badge bg-success">Ch7. 실습문제</span></h5>
-                <ul>
-                    <li><h6><a href="./4week/html/Ch7-실습과제1.html">실습문제 1</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제2.html">실습문제 2</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제3.html">실습문제 3</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제4.html">실습문제 4</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제5.html">실습문제 5</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제6.html">실습문제 6</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제7.html">실습문제 7</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제8.html">실습문제 8</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제9-1.html">실습문제 9-1</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제9-2.html">실습문제 9-2</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제9-3.html">실습문제 9-3</a></h6></li>
-                    <li><h6><a href="./4week/html/Ch7-실습과제10.html">실습문제 10</a></h6></li>
-                </ul>
             </details>
         </li>
         <li>
             <details>
-                <summary><h4><span class="badge bg-primary">7주차 과제</span></h4></summary>
-                <h5><span class="badge bg-success">Open Challenge-08</span></h5>
-                <ul>
-                    <li><h6><a href="./5week/html/Ch8-openchallenge.html">Open Challenge<span class="badge bg-warning">New</span></a></h6></li>
+                <summary><h4 class="badge bg-primary">4주차 레포트</h4></summary>
+                <h5 class="badge bg-success">Open Challenge</h5>
+                <ul class="btn-list">
+                    <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/Open%20Challenge%2006.html"
+                                class="btn btn-primary btn-cube">Open Challenge</a></h6></li>
+                </ul>
+                <hr>
+                <h5 class="badge bg-success">Ch4. 연습문제</h5>
+                <ul class="btn-list">
+                    <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-1-(1).html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 1-1</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-1-(2).html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 1-2</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-1-(3).html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 1-3</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-2.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 2</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-3-(1).html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 3-1</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-3-(2).html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 3-2</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-4.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 4</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-5.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 5</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-6-(1).html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 6-1</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-6-(2).html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 6-2</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/6-8.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 7</a></h6></li>
+            <li><h6><a href="file:///C:/Users/dlwla/Desktop/git/webPG/1002/7-1.html"
+                        class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 8</a></h6></li>
+                <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1002\7-2.html"
+                            class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 9</a></h6></li>
+                <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1002\7-3.html"
+                            class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 10</a></h6></li>
+                <li><h6><a href=".C:\Users\dlwla\Desktop\git\webPG\1002\7-4.html"
+                            class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 11</a></h6></li>
+                <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1002\7-5.html"
+                            class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 12</a></h6></li>
+                <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1002\7-5.js"
+                            class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 12-1</a></h6></li>
+                <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1002\7-6.html"
+                            class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 13</a></h6></li>
+                            <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1002\7-7.html"
+                                class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 14</a></h6></li>
+                            <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1002\7-9.html"
+                                class="btn btn-secondary btn-cube ch4-exercise-btn">연습문제 15</a></h6></li>
                 </ul>
                 <br>
-                <h5><span class="badge bg-success">Ch8. 실습문제</span></h5>
-                <ul>
-                    <li><h6><a href="./5week/html/Ch8-실습과제1-1.html">실습문제 1-1</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제1-2.html">실습문제 1-2</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제1-3.html">실습문제 1-3</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제2-1.html">실습문제 2-1</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제2-2.html">실습문제 2-2</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제2-3.html">실습문제 2-3</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제3.html">실습문제 3</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제4.html">실습문제 4</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제5.html">실습문제 5</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제6.html">실습문제 6</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제7-1.html">실습문제 7-1</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제7-2.html">실습문제 7-2</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제8.html">실습문제 8</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제9.html">실습문제 9</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제10-1.html">실습문제 10-1</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch8-실습과제10-2.html">실습문제 10-2</a><span class="badge bg-warning">New</span></h6></li>
-                </ul>
-                <br>
-                <h5><span class="badge bg-success">Open Challenge-09</span></h5>
-                <ul>
-                    <li><h6><a href="./5week/html/Ch9-openchallenge.html">Open Challenge<span class="badge bg-warning">New</span></a></h6></li>
-                </ul>
-                <br>
-                <h5><span class="badge bg-success">Ch9. 실습문제</span></h5>
-                <ul>
-                    <li><h6><a href="./5week/html/Ch9-실습과제1.html">실습문제 1</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제2.html">실습문제 2</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제3.html">실습문제 3</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제4.html">실습문제 4</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제5.html">실습문제 5</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제6.html">실습문제 6</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제7.html">실습문제 7</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제8.html">실습문제 8</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제9.html">실습문제 9</a><span class="badge bg-warning">New</span></h6></li>
-                    <li><h6><a href="./5week/html/Ch9-실습과제10.html">실습문제 10</a><span class="badge bg-warning">New</span></h6></li>
-                </ul>
             </details>
         </li>
-    </ul>
+        <li>
+            <details>
+                <summary><h4 class="badge bg-primary">9주차 레포트</h4></summary>
+                <h5 class="badge bg-success">PHP</h5>
+                <ul class="btn-list">
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1106\problem1.php"
+                        class="btn btn-primary btn-cube">Problem 1</a></h6></li>
+            <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1106\problem2.php"
+                        class="btn btn-primary btn-cube">Problem 2</a></h6></li>
+            <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1106\problem3.php"
+                        class="btn btn-primary btn-cube">Problem 3</a></h6></li>
+                </ul>
+
+                <br>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary><h4 class="badge bg-primary">10주차 레포트</h4></summary>
+                <h5 class="badge bg-success">PHP</h5>
+                <ul class="btn-list">
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1113\problem4.php"
+                                class="btn btn-primary btn-cube">Problem 4</a></h6></li>
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1113\problem5.php"
+                                class="btn btn-primary btn-cube">Problem 5</a></h6></li>
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1113\problem6.php"
+                                class="btn btn-primary btn-cube">Problem 6</a></h6></li>
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1113\problem7.php"
+                                class="btn btn-primary btn-cube">Problem 7</a></h6></li>
+                    <li><h6><a href="C:\Users\dlwla\Desktop\git\webPG\1113\problem8.php"
+                                class="btn btn-primary btn-cube">Problem 8</a></h6></li>
+                </ul>
+                <br>
+            </details>
+        </li>
+</ul>
 </body>
 </html>
+       
